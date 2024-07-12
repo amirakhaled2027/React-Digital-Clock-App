@@ -1,0 +1,42 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', monospace;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+.clock-container {
+    font-family: 'Orbitron', monospace;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 20px #00c6ff, 0 0 40px #00c6ff, 0 0 80px #00c6ff;
+    background: linear-gradient(to right, #000428, #012747);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 50px rgba(0, 198, 255, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .clock-container span {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+    }
+    to {
+      box-shadow: 0 0 50px rgba(0, 198, 255, 0.8);
+    }
+  }
